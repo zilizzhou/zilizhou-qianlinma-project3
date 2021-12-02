@@ -17,7 +17,7 @@ class HomePage extends Component{
         return (
            <div className="container">
             {/* <Particles className={classes.particles} params={particlesOptions} /> */}
-            {/* <NavBar /> */}
+            <NavBar />
             <Header />
             <SearchPage searchChange={this.onSearchChange}/>
             <Routes>
