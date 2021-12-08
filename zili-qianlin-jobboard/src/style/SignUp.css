@@ -1,0 +1,46 @@
+.form{
+    background: #FFFFFF;
+    width: 25%;
+    margin: 200px auto 80px;
+    text-align:  center;
+    box-shadow:  0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 45;
+  }
+  
+  .input {
+    font-family: "Titillium Web, sans-serif";
+    outline: 0;
+    background: #f2f2f2;
+    border: 0;
+    font-size:  10;
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #btn {
+    font-family: "Titillium Web, sans-serif";
+    outline: 0;
+    background: #009688;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 5;
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 20%;
+    cursor: pointer;
+    
+  }
+  
+  .message {
+    margin: 15px 0 0;
+    color: #57606f;
+    font-size:  14;
+    font-family:  "Titillium Web, sans-serif";
+  }
+  
+  .message_a {
+    color: #009688;
+    text-decoration: none;
+  }

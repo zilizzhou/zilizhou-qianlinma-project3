@@ -32,14 +32,13 @@ nav{
     align-items: center;
 }
 
-.active{
-    border-bottom: 2px solid firebrick;
-}
+
 
 .button-header{
     background-color:  #009693;
     padding: 10px 25px;
     color: white;  
+    cursor: pointer;
 }
 .divider{
     width: 5px;

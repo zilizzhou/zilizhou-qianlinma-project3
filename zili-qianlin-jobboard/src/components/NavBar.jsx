@@ -1,31 +1,35 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 import {ReactComponent as Home} from '../logos/home.svg';
-import {ReactComponent as JobSearch} from '../logos/search-logo.svg';
-
+import {ReactComponent as JobSearchLogo} from '../logos/search-logo.svg';
+import {useNavigate} from "react-router-dom";
 import "../style/NavBar.css";
+import { Link } from 'react-router-dom';
 
-const NavBar = ({history}) =>{
-    const handleClick=() =>{
-        history.push('/')
-        // isLogged(false)
+
+export default function NavBar(){
+    let navigate = useNavigate();
+
+    function handleClick(){
+        navigate("/login");
     }
+
     return(
         <nav>
             <div className='div-header'>
-                <div className='div-svg-search' onClick={() => history.push('/')}>
-                    <JobSearch/>
+                <div className='div-svg-search'>
+                    <JobSearchLogo/>
                 </div>
                 <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-                    <NavLink exact to='/Home' activeClassName='active'><Home className='div-svg'/></NavLink>
-                    {/* <NavLink exact to='/favoriate-page' activeClassName='active'><FavortiatePage className='div-svg'/></NavLink> */}
-                    <button className='button-header' href="login" onClick={handleClick}>Log in</button>
+                    <NavLink exact to='/Home' ><Home className='div-svg'/></NavLink>
+                    <Link to={"/login"}>
+                        <button className='button-header' ><b>Log in</b></button></Link>
                     <div className="divider"/>
-                    <button className='button-header' href="signup" onClick={handleClick}>Sign up</button>
+                    <Link to={"/signup"}>
+                        <button className='button-header' ><b>Sign Up</b></button></Link>
                 </div>
             </div>
         </nav>
     )
 }
 
-export default NavBar;

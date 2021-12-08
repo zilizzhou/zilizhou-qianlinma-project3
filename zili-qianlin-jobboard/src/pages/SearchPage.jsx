@@ -5,7 +5,7 @@ import "../style/SearchPage.css";
 const SearchPage = ({searchChange}) => {
     return (
       <div>
-        <section className="search_box">
+        <section id="search_box">
         <input
           onChange={searchChange}
           className="search"
@@ -14,7 +14,7 @@ const SearchPage = ({searchChange}) => {
         />
         </section>
     
-        <button className="btn" type="submit">Search</button>
+        <button id="btn" type="submit">Search</button>
       </div>
     );
   };
